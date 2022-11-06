@@ -2,7 +2,7 @@
 #   попробуй api яндекса
 #   ?? замена чисел в тексте
 #   компиляция в exe / граф интерфейс??
-
+#   кто прочитал тот пидр
 
 import inflect
 from googletrans import Translator
@@ -14,9 +14,7 @@ print('Введите число:')
 x=input() # принимаем число
 y=(p.number_to_words(x)) # преобразовываем в текст
 ts=translator.translate(str(y), src= 'en', dest= 'ru') # переводим на русский
-
 output=ts.text # берем итоговую строку
-
 print(output.replace(',', ''))
 
 def zmn(x2): 
