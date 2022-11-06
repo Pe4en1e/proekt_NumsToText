@@ -10,6 +10,7 @@ from googletrans import Translator
 translator=Translator()
 p = inflect.engine()
 
+print('Введите число:')
 x=input() # принимаем число
 y=(p.number_to_words(x)) # преобразовываем в текст
 ts=translator.translate(str(y), src= 'en', dest= 'ru') # переводим на русский
@@ -24,5 +25,6 @@ def zmn(x2):
     output=ts.text
     return output.replace(',', '')
 
+print('Введите число:')
 x2=input()
 print(zmn(x2))
