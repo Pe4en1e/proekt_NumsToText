@@ -46,7 +46,7 @@ async def priem(message:types.message):
             y=(p.number_to_words(x))
             ts=translator.translate(str(y), src='en', dest='ru')
             output=ts.text
-            return output.replace(',', '')
+            return output.replace(',', '').replace('-', '').replace('.', '').upper()
         await bot.send_message(chat_id=message.chat.id, text=zmn(num))
     else:
         await bot.send_message(chat_id=message.chat.id, text='Извини, я работаю только с числами!')
