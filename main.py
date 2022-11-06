@@ -2,6 +2,7 @@
 #   попробуй api яндекса
 #   ?? замена чисел в тексте
 #   компиляция в exe / граф интерфейс??
+#   выбор языка
 
 import inflect
 from googletrans import Translator
@@ -16,8 +17,8 @@ ts=translator.translate(str(y), src= 'en', dest= 'ru') # переводим на
 output=ts.text # берем итоговую строку
 print(output.replace(',', ''))
 
-def zmn(x2): 
-    y=(p.number_to_words(x2))
+def zmn(x): 
+    y=(p.number_to_words(x))
     ts=translator.translate(str(y), src='en', dest='ru')
     output=ts.text
     return output.replace(',', '')
