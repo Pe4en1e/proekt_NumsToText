@@ -1,3 +1,9 @@
+#   pip: inflect googletrans==3.1.0a0
+#   попробуй api яндекса
+#   ?? замена чисел в тексте
+#   компиляция в exe / граф интерфейс??
+
+
 import inflect
 from googletrans import Translator
 
