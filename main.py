@@ -2,7 +2,6 @@
 #   попробуй api яндекса
 #   ?? замена чисел в тексте
 #   компиляция в exe / граф интерфейс??
-#   кто прочитал тот пидр
 
 import inflect
 from googletrans import Translator
