@@ -31,7 +31,7 @@ async def on_startup(_):
 
 @dp.message_handler(commands=['start'])
 async def command_start(message:types.message):
-    await bot.send_message(chat_id=message.chat.id, text='Привет! Данный бот предназначен для перевода чисел в текстовую запись')
+    await bot.send_message(chat_id=message.chat.id, text='Привет! Данный бот предназначен для перевода чисел в текстовую запись\n\nПросто отправьте любое число')
 
 @dp.message_handler()
 async def priem(message:types.message):
