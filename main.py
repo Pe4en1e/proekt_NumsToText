@@ -1,7 +1,5 @@
 #   pip: inflect googletrans==3.1.0a0
-#   попробуй api яндекса
 #   ?? замена чисел в тексте
-#   компиляция в exe / граф интерфейс??
 #   выбор языка
 
 import inflect
@@ -22,7 +20,3 @@ def zmn(x):
 print('Введите число:')
 x=input()
 print(zmn(x))
-# if x=='10':
-#     print('ДЕСЯТЬ')
-# else:
-#     print(zmn(x))
