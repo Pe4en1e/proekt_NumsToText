@@ -11,6 +11,7 @@ translator=Translator()
 p = inflect.engine()
 
 def zmn(x):
+    
     y=(p.number_to_words(x))
     ts=translator.translate(str(y), src='en', dest='ru')
     output=ts.text
@@ -18,4 +19,7 @@ def zmn(x):
 
 print('Введите число:')
 x=input()
-print(zmn(x))
+if x=='10':
+    print('ДЕСЯТЬ')
+else:
+    print(zmn(x))
