@@ -40,6 +40,7 @@ async def priem(message:types.message):
         await bot.send_message(chat_id=message.chat.id, text=zmn(num))
     else:
         await bot.send_message(chat_id=message.chat.id, text='Извини, я работаю только с числами!')
+        await bot.send_sticker(chat_id=message.сhat.id, sticker='CAACAgIAAxkBAAEGWWFjaZ7m_gF_ppb-Zyju8J6SQSDYJAACLhUAAnHNqEhnRQlQULJboCsE')
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
