@@ -38,6 +38,8 @@ async def priem(message:types.message):
     num=message.text
     if num.isdigit():
         await bot.send_message(chat_id=message.chat.id, text=zmn(num))
+    elif  num=='привет пупсик':
+        await bot.send_message(chat_id=message.chat.id, text='привет алина!!!')
     else:
         await bot.send_message(chat_id=message.chat.id, text='Извини, я работаю только с числами!')
 
