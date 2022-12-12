@@ -37,7 +37,8 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>Montserrat SemiBold</family>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="text">
@@ -67,7 +68,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Black</family>
+      <family>Gilroy</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -81,7 +82,7 @@ background-color: #181717</string>
      <set>Qt::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string/>
+     <string>Рубли</string>
     </property>
    </widget>
    <widget class="QPushButton" name="transfer_btn">
@@ -128,7 +129,7 @@ border: 0px
     </property>
     <property name="font">
      <font>
-      <family>Montserrat Black</family>
+      <family>Gilroy</family>
       <pointsize>12</pointsize>
      </font>
     </property>
@@ -142,7 +143,7 @@ background-color: #181717</string>
      <set>Qt::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string/>
+     <string>Копейки</string>
     </property>
    </widget>
    <widget class="QLabel" name="result">
@@ -156,8 +157,8 @@ background-color: #181717</string>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat SemiBold</family>
-      <pointsize>20</pointsize>
+      <family>Gilroy</family>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="styleSheet">

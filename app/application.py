@@ -1,5 +1,6 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
-import main
+from main import zmn
+
 
 class Ui_Window(object):
     def setupUi(self, Window):
@@ -12,7 +13,8 @@ class Ui_Window(object):
         self.background = QtWidgets.QLabel(self.centralwidget)
         self.background.setGeometry(QtCore.QRect(0, 0, 401, 601))
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("Montserrat SemiBold")
+        font.setPointSize(10)
         self.background.setFont(font)
         self.background.setText("")
         self.background.setPixmap(QtGui.QPixmap("SPRK_default_preset_name_custom – 1.png"))
@@ -22,34 +24,46 @@ class Ui_Window(object):
         self.rub_input.setGeometry(QtCore.QRect(36, 247, 328, 34))
         self.rub_input.setMinimumSize(QtCore.QSize(328, 34))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Black")
+        font.setFamily("Gilroy")
         font.setPointSize(12)
         self.rub_input.setFont(font)
-        self.rub_input.setStyleSheet("background-image: url(field.png);\n""color: #ffffff;\n""border: 0px;\n""background-color: #181717")
+        self.rub_input.setStyleSheet("background-image: url(field.png);\n"
+"color: #ffffff;\n"
+"border: 0px;\n"
+"background-color: #181717")
         self.rub_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.rub_input.setPlaceholderText("")
         self.rub_input.setObjectName("rub_input")
         self.transfer_btn = QtWidgets.QPushButton(self.centralwidget)
         self.transfer_btn.setGeometry(QtCore.QRect(86, 351, 229, 35))
         self.transfer_btn.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
-        self.transfer_btn.setStyleSheet("#transfer_btn{\n""background-image: url(Button.png);\n""border: 0px\n""}\n""\n""#transfer_btn:hover {\n""background-image: url(Button_hover.png);\n""border: 0px\n""}")
+        self.transfer_btn.setStyleSheet("#transfer_btn{\n"
+"background-image: url(Button.png);\n"
+"border: 0px\n"
+"}\n"
+"\n"
+"#transfer_btn:hover {\n"
+"background-image: url(Button_hover.png);\n"
+"border: 0px\n"
+"}")
         self.transfer_btn.setText("")
         self.transfer_btn.setObjectName("transfer_btn")
         self.kopek_input = QtWidgets.QLineEdit(self.centralwidget)
         self.kopek_input.setGeometry(QtCore.QRect(36, 299, 328, 34))
         self.kopek_input.setMinimumSize(QtCore.QSize(328, 34))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Black")
+        font.setFamily("Gilroy")
         font.setPointSize(12)
         self.kopek_input.setFont(font)
-        self.kopek_input.setStyleSheet("background-image: url(field.png);\n""color: #ffffff;\n""border: 0px;\n""background-color: #181717")
+        self.kopek_input.setStyleSheet("background-image: url(field.png);\n"
+"color: #ffffff;\n"
+"border: 0px;\n"
+"background-color: #181717")
         self.kopek_input.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.kopek_input.setPlaceholderText("")
         self.kopek_input.setObjectName("kopek_input")
         self.result = QtWidgets.QLabel(self.centralwidget)
         self.result.setGeometry(QtCore.QRect(37, 404, 326, 178))
         font = QtGui.QFont()
-        font.setFamily("Montserrat SemiBold")
+        font.setFamily("Gilroy")
         font.setPointSize(10)
         self.result.setFont(font)
         self.result.setStyleSheet("color: #ffffff")
@@ -68,15 +82,17 @@ class Ui_Window(object):
     def retranslateUi(self, Window):
         _translate = QtCore.QCoreApplication.translate
         Window.setWindowTitle(_translate("Window", "NumsToText"))
+        self.rub_input.setPlaceholderText(_translate("Window", "Рубли"))
+        self.kopek_input.setPlaceholderText(_translate("Window", "Копейки"))
 
 
     def set_result(self):
         rubles = self.rub_input.text()
         kopek = self.kopek_input.text()
-        output = main.zmn(rubles, kopek)
+        output = zmn(rubles, kopek)
         self.result.setText(output)
 
-    
+
 
 
 

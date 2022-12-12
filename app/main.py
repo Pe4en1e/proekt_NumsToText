@@ -12,7 +12,7 @@ def zmn(x, y):
     rts = translator.translate(str(prerts), src='en', dest='ru')
     rubles = rts.text
 
-    if int(y) < 99:
+    if int(y) <= 99:
         ktxt = (p.number_to_words(y))
         prekts = ktxt + ' kopek'
         kts = translator.translate(str(prekts), src='en', dest='ru')
