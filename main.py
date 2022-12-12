@@ -1,9 +1,7 @@
-#   pip: inflect googletrans==3.1.0a0
-
 import inflect
 from googletrans import Translator
 
-translator = Translator()
+translator=Translator()
 p = inflect.engine()
 
 def zmn(x, y):
@@ -21,11 +19,4 @@ def zmn(x, y):
         return 'Копеек не может быть больше 99'
 
     return rubles.replace(',', '').upper() + ' ' + kopek.replace(',', '').upper()
-
-
-print('Введите рубли:')
-x = input()
-print('Введите копейки:')
-y = input()
-print(zmn(x, y))
 

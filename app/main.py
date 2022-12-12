@@ -20,12 +20,10 @@ def zmn(x, y):
     else:
         return 'Копеек не может быть больше 99'
 
-    return rubles.replace(',', '').upper() + ' ' + kopek.replace(',', '').upper()
+    rub_output = rubles.replace(',', '').upper()
+    kop_output = kopek.replace(',', '').upper()
+
+    return rub_output + '\n' + kop_output
 
 
-print('Введите рубли:')
-x = input()
-print('Введите копейки:')
-y = input()
-print(zmn(x, y))
 
