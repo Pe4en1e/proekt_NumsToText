@@ -50,11 +50,9 @@ class Ui_Window(object):
         self.result.setGeometry(QtCore.QRect(37, 404, 326, 178))
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
-<<<<<<< Updated upstream
-        font.setPointSize(10)
-=======
+
         font.setPointSize(12)
->>>>>>> Stashed changes
+
         self.result.setFont(font)
         self.result.setStyleSheet("color: #ffffff")
         self.result.setText("")
@@ -62,15 +60,11 @@ class Ui_Window(object):
         self.result.setObjectName("result")
         Window.setCentralWidget(self.centralwidget)
 
-<<<<<<< Updated upstream
+
 
         self.transfer_btn.clicked.connect(self.set_result)
 
 
-=======
-        self.transfer_btn.clicked.connect(self.set_result)
-
->>>>>>> Stashed changes
         self.retranslateUi(Window)
         QtCore.QMetaObject.connectSlotsByName(Window)
 
