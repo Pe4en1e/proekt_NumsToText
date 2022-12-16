@@ -14,7 +14,7 @@ def zmn(x, y):
 
     if int(y) <= 99:
         ktxt = (p.number_to_words(y))
-        prekts = ktxt + ' kopek'
+        prekts = ktxt + ' kopeyka'
         kts = translator.translate(str(prekts), src='en', dest='ru')
         kopek = kts.text
     else:
